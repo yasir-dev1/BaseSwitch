@@ -32,6 +32,8 @@ class App(QDialog):
         self.number = text
 
     def convert_operation(self):
+        self.result_te.clear()
+        self.result = ""
         if self.number is not None:
             try:
                 decimal_number = int(self.number,self.fromb)
